@@ -1,0 +1,249 @@
+html {
+  font-size: 100%;
+}
+
+html body {
+  color: #24292e;
+}
+
+html body a {
+  text-decoration: none;
+  color: #24292e;
+}
+
+html body li {
+  list-style: none;
+}
+
+html body img {
+  max-width: 100%;
+}
+
+.wrapper {
+  margin: 0 auto 130px auto;
+  max-width: 960px;
+  padding: 0 4%;
+}
+
+.wrapper .each-title {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 30px 0;
+}
+
+header {
+  width: 960px;
+  padding: 0 4%;
+  margin: 0 auto;
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header ul li {
+  padding: 0 10px;
+}
+
+.insta {
+  width: 50%;
+}
+
+#homeImg {
+  text-align: center;
+}
+
+#homeImg img {
+  width: 100%;
+  height: 420px;
+  max-width: 1920px;
+}
+
+#about li:first-child {
+  margin-bottom: 25px;
+}
+
+#about p {
+  margin-top: 25px;
+  text-align: justify;
+}
+
+#works ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+#works ul li {
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+#news dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  border-top: solid 1px #c8c8c8;
+  font-size: 0.9rem;
+}
+
+#news dl dt, #news dl dd {
+  padding: 15px;
+  border-bottom: solid 1px #c8c8c8;
+}
+
+#news dl dt {
+  width: 20%;
+}
+
+#news dl dd {
+  width: 80%;
+}
+
+/* :hover   */
+#contact dl {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+#contact dl dt, #contact dl dd {
+  margin-bottom: 15px;
+}
+
+#contact dl dt {
+  width: 20%;
+}
+
+#contact dl dd {
+  width: 80%;
+}
+
+#contact dl dd input, #contact dl dd textarea {
+  border: solid 1px #c8c8c8;
+  width: 100%;
+  padding: 10px;
+}
+
+#contact .btn {
+  text-align: center;
+}
+
+#contact .btn input {
+  border: solid 1px #c8c8c8;
+  padding: 10px;
+  background-color: #292424;
+  color: white;
+  width: 150px;
+  margin: 0 auto;
+}
+
+#contact .btn input:hover {
+  color: black;
+  background-color: white;
+}
+
+footer {
+  text-align: center;
+  background-color: #292424;
+  height: 50px;
+  padding: 15px 0;
+}
+
+footer p {
+  color: white;
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    width: 100%;
+  }
+  body img {
+    width: 100%;
+  }
+  header {
+    max-width: 100%;
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 20px;
+    margin-bottom: 30px;
+  }
+  header li {
+    font-size: 0.8rem;
+  }
+  #homeImg img {
+    margin-bottom: 30px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #works ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #works ul li {
+    width: 100%;
+  }
+  #news dl {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #news dl dt, #news dl dd {
+    width: 100%;
+  }
+  #news dl dt {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  #news dl dd {
+    padding-top: 5px;
+  }
+  #contact dl {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #contact dl dt, #contact dl dd {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=top.css.map */

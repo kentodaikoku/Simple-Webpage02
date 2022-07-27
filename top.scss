@@ -1,0 +1,241 @@
+// html, body
+html {
+    font-size: 100%;
+    body {
+        color: #24292e;
+        // margin: 0 auto;
+        // width: 100%;
+        a {
+            text-decoration: none;
+            color: #24292e
+        }
+        li {
+            list-style: none;
+        }
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+//統一CSS
+.wrapper {
+    margin: 0 auto 130px auto;
+    max-width: 960px;
+    padding: 0 4%;
+    .each-title {
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 30px 0;
+    }
+}
+
+
+// header
+header {
+    width: 960px;
+    padding: 0 4%;
+    margin: 0 auto;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        li {
+            padding: 0 10px;
+        }
+    }
+}
+
+.insta {
+    width: 50%;
+}
+
+// main
+
+// homeimage
+#homeImg {
+    text-align: center;
+    img {
+        width: 100%;
+        height: 420px;
+        // object-fit: cover;
+        max-width: 1920px;
+    }
+}
+
+// section #about
+#about {
+    li:first-child {
+        margin-bottom: 25px;
+    }
+    p {
+        margin-top: 25px;
+        text-align: justify;
+    }
+}
+
+// section #works
+#works ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    li {
+        width: 30%;
+        margin-bottom: 20px;
+    }
+}
+
+// section #news
+#news {
+    dl {
+        display: flex;
+        flex-wrap: wrap; //折り返し
+        width: 100%;
+        border-top: solid 1px #c8c8c8;
+        font-size: 0.9rem;
+        dt, dd {
+            padding: 15px;
+            border-bottom: solid 1px #c8c8c8;
+        }
+        dt {
+            width: 20%; //dlの横幅100％のうちの20％
+        }
+        dd {
+            width: 80%; //dlの横幅100％のうちの80％
+        }
+    }
+    
+}
+
+// section #contact
+/* :hover   */
+#contact {
+    dl {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+        dt, dd {
+            margin-bottom: 15px;
+        }
+        dt {
+            width: 20%;
+        }
+        dd {
+            width: 80%;
+            input, textarea {
+                border: solid 1px #c8c8c8;
+                width: 100%;
+                padding: 10px;
+            }
+        }
+    }
+    .btn {
+        text-align: center;
+        input {
+            border: solid 1px #c8c8c8;
+            padding: 10px;
+            background-color: rgb(41, 36, 36);
+            color: white;
+            width: 150px;
+            margin: 0 auto;
+        }
+        input:hover {
+            color: black;
+            background-color: white;
+        }
+    }
+}
+
+
+// footer
+footer {
+    text-align: center;
+    background-color: rgb(41, 36, 36);
+    height: 50px;
+    padding: 15px 0;
+    p {
+        color: white;
+        font-size: 0.8rem;
+    }
+}
+
+
+// breakpoint 650px
+@media screen and (max-width: 700px) {
+    body {
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+
+    header {
+        max-width: 100%;
+        height: auto;
+        flex-direction: column;
+        padding-top: 20px;
+        margin-bottom: 30px;
+        li {
+            font-size: 0.8rem;
+            // padding: 10px;
+        }
+    }
+
+    #homeImg img {
+        margin-bottom: 30px;
+        // height: 400px;
+        object-fit: cover;
+    }
+
+    #works {
+        ul {
+            flex-direction: column;
+            li {
+                width: 100%;
+            }
+        }
+    }
+
+    #news {
+        dl {
+            flex-direction: column;
+            dt, dd {
+                width: 100%;
+            }
+            dt {
+                border-bottom: none;
+                padding-bottom: 0;
+            }
+            dd {
+                padding-top: 5px;
+            }
+        }
+    }
+
+    #contact {
+        dl {
+            flex-direction: column;
+            dt, dd {
+                width: 100%;
+            }
+        }
+    }
+}
+
+// コンテンツ幅
+// コンテンツの横幅は960pxで横のパディングは4%です。
+// メインビジュアルだけ全幅にします。
+// メインビジュアル
+// 全幅で高さは420px固定です。
+// Works
+// スマホ表示の際は縦1列に並びます。
+// News
+// スマホ表示の際は日付とタイトルが縦に並びます。
+// レスポンシブ
+// ブレークポイントは600pxです。

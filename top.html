@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favixcon Link -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <!-- reset css -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="./top.css">
+    <title>MY WORK</title>
+</head>
+<body>
+    <header>
+        <div class="title">
+            <h1><a href="top.html"><img src="img/logo.svg" alt="logo"></a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <!-- instagram -->
+                <li><a href="#"><img  class="insta" src="img/instagram.png" alt="instagram"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="homeImg">
+            <picture>
+                <source media="(max-width: 700px)" srcset="img/mainvisual-pc.jpeg">
+                <img src="img/mainvisual-pc.jpeg" alt="mainvisual">
+            </picture>
+        </div>
+
+        <section id="about" class="wrapper">
+            <h2 class="each-title">About</h2>
+            <ul>
+                <li>A Novice Programmer</li>
+                <li>2th Floor xxxxx Buliding x-x-x Nerima, Nerima-ku, Tokyo 000-0000 Japan</li>
+                <li>Tel: 000-0000-0000</li>
+                <li>URL: www.xxxxx.jp</li>
+                <li>Email: xxxxx@xxx.jp</li>
+                <p>プロフィールテキストテキストテキストテキストテキストテキストテキストテキストテキストスト
+                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                </p>
+            </ul>
+        </section>
+
+        <section id="works" class="wrapper">
+            <h2 class="each-title">Works</h2>
+            <ul>
+                <li><img src="img/works1.jpeg" alt="img1"></li>
+                <li><img src="img/works2.jpeg" alt="img2"></li>
+                <li><img src="img/works3.jpeg" alt="img3"></li>
+                <li><img src="img/works4.jpeg" alt="img4"></li>
+                <li><img src="img/works5.jpeg" alt="img5"></li>
+                <li><img src="img/works6.jpeg" alt="img6"></li>
+            </ul>
+        </section>
+
+        <section id="news" class="wrapper">
+            <h2 class="each-title">News</h2>
+            <dl>
+                <dt>2022.xx.xx</dt>
+                <dd>デザイン雑誌「ＸＸＸＸＸＸ Vol.11』に掲載していただきました。</dd>
+                <dt>2022.xx.xx</dt>
+                <dd>ＸＸ月ＸＸ日から写真集「ＸＸＸＸＸＸＸ」の販売を開始します。</dd>
+                <dt>2022.xx.xx</dt>
+                <dd>【イベント開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト</dd>
+                <dt>2022.xx.xx</dt>
+                <dd>デザイン雑誌「ＸＸＸＸＸＸ Vol.10』に掲載していただきました。</dd>
+                <dt>2022.xx.xx</dt>
+                <dd>【個展開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト</dd>
+            </dl>
+        </section>
+
+        <section id="contact" class="wrapper">
+            <h2 class="each-title">Contact</h2>
+            <form action="#" method="post">
+                <dl>
+                    <dt><label for="name">NAME</label></dt>
+                    <dd><input type="text" id="name" name="name"></dd>
+                    <dt><label for="email">E-mail</label></dt>
+                    <dd><input type="email" id="email" name="email"></dd>
+                    <dt><label for="msg">MESSAGE</label></dt>
+                    <dd><textarea name="msg" id="msg" cols="30" rows="7"></textarea></dd>
+                </dl>
+                <div class="btn">
+                    <input type="submit" value="送信">
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <p>&copy; 2022 MY WORK</p>
+    </footer>
+
+</body>
+</html>
